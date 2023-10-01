@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66479D"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Coffee Shop"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#eee"
+        android:hint="Enter Name"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/flavourHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="Flavour"
+        android:textAllCaps="true"
+        android:textColor="#666565"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/firstFlavour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flavourHeading"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:text="Whipped Icecream" />
+
+    <CheckBox
+        android:id="@+id/secondFlavour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstFlavour"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:text="Chocolate" />
+
+    <TextView
+        android:id="@+id/qtyHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondFlavour"
+        android:fontFamily="cursive"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:textColor="#666565"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/qtyMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtyHeading"
+        android:layout_marginTop="12dp"
+        android:background="#66479D"
+        android:text="-"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/qtyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtyMinus"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="serif-monospace"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/qtyPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtyNumber"
+        android:background="#66479D"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtyPlus"
+        android:layout_marginTop="16dp"
+        android:background="#66479D"
+        android:text="Order Now"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

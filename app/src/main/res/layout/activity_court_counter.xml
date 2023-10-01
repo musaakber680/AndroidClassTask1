@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".CourtCounterActivity">
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="Court Counter"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/teamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainHeading"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="Team A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resteamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamA"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="14dp"
+        android:text="0"
+        android:textColor="#FFBF00"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/threepoints"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resteamA"
+        android:layout_marginTop="14dp"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="+3 Points"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/twopoints"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/threepoints"
+        android:layout_marginTop="14dp"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="+2 Points"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/freethrow"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twopoints"
+        android:layout_marginTop="14dp"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="Free Throw"
+        android:textColor="#fff" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/freethrow"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/teamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainHeading"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/divider"
+        android:text="Team B"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resteamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamB"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/divider"
+        android:text="0"
+        android:textColor="#FFBF00"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/threepointsB"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resteamB"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/divider"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="+3 Points"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/twopointsB"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/threepointsB"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/divider"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="+2 Points"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/freethrowB"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twopointsB"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/divider"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="Free Throw"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#F3A737"
+        android:fontFamily="monospace"
+        android:text="Reset"
+        android:textColor="#fff" />
+
+</RelativeLayout>
+
